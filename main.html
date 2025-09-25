@@ -15,13 +15,16 @@
 			<input id="email" type="email" placeholder="Email" required>
 
 		<label for="gender_m">Male</label>
-			<input id="gender_m" type="radio" required>
+			<input id="gender_m" type="radio" name="gender" required>
 		<label for="gender_f">Female</label>
-			<input id="gender_f" type="radio" required>
+			<input id="gender_f" type="radio" name="gender" required>
 
-		<label for="cars">Car Brands</label>
-			<input id="cars" type="select" required placeholder="--Please choose an option--">
-
+		<select placeholder="--Please choose an option--" id="cars" required>
+			<option>BMW</option>
+			<option>Audi</option>
+			<option>Mercedes</option>
+		</select>
+			
 		<label for="age">Age</label>
 			<input id="age" type="number" placeholder="Age" required>
 
@@ -36,8 +39,7 @@
 
 		<label for="tos">I agree to TOS</label>
 			<input id="tos" type="checkbox" required>
-
-		<input type="submit">
+			<button type="submit">
 	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
